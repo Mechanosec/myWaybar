@@ -32,7 +32,8 @@
 #power-profiles-daemon,
 #battery,
 #temperature,
-#backlight {
+#backlight,
+#tray {
   padding: 2 15;
   margin: 2;
   color: @fg;
