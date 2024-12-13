@@ -5,6 +5,7 @@
   // "width": 1366, // Waybar width
   // Choose the order of the modules
   "modules-left": [
+    "tray",
     "clock",
     "hyprland/language",
     "pulseaudio",
@@ -19,7 +20,6 @@
     "power-profiles-daemon",
     "backlight",
     "battery",
-    "tray",
   ],
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -44,7 +44,7 @@
     "spacing": 10,
   },
   "clock": {
-    "format": "  {:%H:%M    %e %b}",
+    "format": "   {:%H:%M     %e %b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "today-format": "<b>{}</b>",
   },
@@ -79,13 +79,14 @@
     "format-disconnected": "Disconnected ⚠",
   },
   "pulseaudio": {
-    "min-length": 10,
+    "min-length": 12,
+
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
+    "format": "{icon}  {volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": " {volume}% ",
+    "format-source": " {volume}%",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -94,7 +95,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
+      "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
   },
