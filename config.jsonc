@@ -4,10 +4,14 @@
   "height": 20, // Waybar height
   // "width": 1366, // Waybar width
   // Choose the order of the modules
-  "modules-left": ["clock", "hyprland/language", "hyprland/window"],
+  "modules-left": [
+    "clock",
+    "hyprland/language",
+    "pulseaudio",
+    "hyprland/window",
+  ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "pulseaudio",
     "network",
     "cpu",
     "memory",
@@ -77,11 +81,11 @@
   "pulseaudio": {
     "min-length": 10,
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source} ",
+    "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format-source": " {volume}% ",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
