@@ -42,6 +42,7 @@
   "tray": {
     // "icon-size": 21,
     "spacing": 10,
+    "excluded_tray_items": ["nm-applet"],
   },
   "clock": {
     "format": "   {:%H:%M     %e %b}",
