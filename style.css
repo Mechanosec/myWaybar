@@ -60,6 +60,12 @@
 #battery:hover {
   color: @yellow;
 }
+#cpu:hover {
+  color: @yellow;
+}
+#memory:hover {
+  color: @yellow;
+}
 
 #window {
   color: @yellow;

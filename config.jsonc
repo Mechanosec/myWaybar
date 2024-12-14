@@ -52,9 +52,11 @@
   },
   "cpu": {
     "format": "{usage}% ",
+    "on-click": "htop",
   },
   "memory": {
     "format": "{}% ",
+    "on-click": "htop",
   },
   "battery": {
     "states": {
