@@ -33,7 +33,8 @@
 #battery,
 #temperature,
 #backlight,
-#tray {
+#tray,
+#idle_inhibitor {
   padding: 2 15;
   margin: 2;
   color: @fg;
