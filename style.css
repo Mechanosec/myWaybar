@@ -4,6 +4,7 @@
   min-height: 0;
   font-size: 14px;
   margin: 0.1em 0.1em 0.1em 0.1em;
+  font-family: "Roboto", "Font Awesome 5 Free";
 }
 
 @define-color bg #1e1e2e;
