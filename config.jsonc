@@ -1,7 +1,7 @@
 {
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar at the bottom of your screen
-  "height": 20, // Waybar height
+  "height": 35, // Waybar height
   // "width": 1366, // Waybar width
   // Choose the order of the modules
   "modules-left": [
@@ -18,7 +18,7 @@
     "cpu",
     "memory",
     // "temperature",
-    // "power-profiles-daemon",
+    "power-profiles-daemon",
     "backlight",
     "battery",
   ],
@@ -46,7 +46,7 @@
     "excluded_tray_items": ["nm-applet"],
   },
   "clock": {
-    "format": "   {:%H:%M     %e %b}",
+    "format": "   {:%H:%M    %e %b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "today-format": "<b>{}</b>",
   },
@@ -59,6 +59,7 @@
     "on-click": "btop",
   },
   "battery": {
+    // "min-length": 5,
     "states": {
       // "good": 95,
       "warning": 30,
@@ -120,7 +121,7 @@
     },
   },
   "power-profiles-daemon": {
-    "min-length": 3,
+    "min-length": 2,
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
