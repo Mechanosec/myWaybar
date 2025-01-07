@@ -2,10 +2,9 @@
   border: none;
   border-radius: 2px;
   min-height: 0;
-  font-size: 12px;
+  font-size: 16px;
   /*margin: 0.1em 0.1em 0.1em 0.1em;*/
   font-family: "Roboto", "Font Awesome 5 Free";
-  /*font-family: "FontAwesome";*/
 }
 
 @define-color bg #1e1e2e;
@@ -59,13 +58,13 @@
 #network:hover {
   color: @yellow;
 }
-#power-profiles-daemon {
-  padding-right: 15px;
-}
 #power-profiles-daemon:hover {
   color: @yellow;
 }
-#battery {
+#cpu,
+#memory,
+#battery,
+#power-profiles-daemon {
   padding-right: 15px;
 }
 #battery:hover {
